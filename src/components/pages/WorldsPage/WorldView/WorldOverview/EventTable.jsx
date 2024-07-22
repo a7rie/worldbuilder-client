@@ -7,7 +7,7 @@ import { WorldsContext } from "../../../../../contexts/WorldsContext"
 export default function EventTable() {
   const { worldDetails } = useContext(WorldsContext)
   const { setSelectedEventId } = useContext(WorldsContext)
-
+  console.log(worldDetails.events)
   return (
     <Table striped bordered hover className="table-sm">
       <thead>
@@ -27,7 +27,7 @@ export default function EventTable() {
             <td colSpan={3}>{event.event_description}</td>
             <td>{event.event_type}</td>
             <td>{event.event_date}</td>
-            <td>{event.location_name}</td>
+            <td>{event.location !== null ? event.location.location_name : ""}</td>
             <td>
               <DeleteButton entityType="event" entityId={event.event_id} />
             </td>
