@@ -1,0 +1,13 @@
+.removeLink {
+  color: red;
+}
+
+.fakeLink {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modal-dialog {
+  max-width: 50%;
+}
