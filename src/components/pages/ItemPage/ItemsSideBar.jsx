@@ -12,7 +12,7 @@ export default function ItemsSideBar() {
     setSelectedItemId(itemId)
   }
 
-  if (worldDetails.items === null) {
+  if (worldDetails || worldDetails.items === null) {
     return null
   }
 

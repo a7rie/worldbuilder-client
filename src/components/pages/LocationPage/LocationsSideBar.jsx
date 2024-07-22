@@ -12,7 +12,7 @@ export default function LocationsSideBar() {
     setSelectedLocationId(locationId)
   }
 
-  if (worldDetails.locations === null) {
+  if (worldDetails || worldDetails.locations === null) {
     return null
   }
 

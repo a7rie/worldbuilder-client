@@ -11,7 +11,7 @@ export default function GroupsSideBar() {
     setSelectedGroupId(groupId)
   }
 
-  if (worldDetails.groups === null) {
+  if (worldDetails || worldDetails.groups === null) {
     return null
   }
 

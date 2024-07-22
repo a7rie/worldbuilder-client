@@ -11,7 +11,7 @@ export default function EventsSideBar() {
     setSelectedEventId(eventId)
   }
 
-  if (worldDetails.events === null) {
+  if (worldDetails || worldDetails.events === null) {
     return null
   }
 

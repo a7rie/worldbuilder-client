@@ -12,7 +12,7 @@ export default function CharactersSideBar() {
     setSelectedCharacterId(charId)
   }
 
-  if (worldDetails.characters === null) {
+  if (worldDetails || worldDetails.characters === null) {
     return
   }
 
