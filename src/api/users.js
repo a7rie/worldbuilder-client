@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3001/api/"
+import { SERVER_ENDPOINT } from "../../constants"
 
 export function login(username, password) {
   const fetchParams = {
@@ -8,7 +8,7 @@ export function login(username, password) {
     },
     body: JSON.stringify({ username, password })
   }
-  return fetch(baseUrl + "login", fetchParams)
+  return fetch(SERVER_ENDPOINT + "/login", fetchParams)
 }
 
 export function register(username, password) {
@@ -19,5 +19,5 @@ export function register(username, password) {
     },
     body: JSON.stringify({ username, password })
   }
-  return fetch(baseUrl + "users", fetchParams)
+  return fetch(SERVER_ENDPOINT + "/users", fetchParams)
 }

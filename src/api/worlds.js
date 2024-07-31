@@ -1,4 +1,6 @@
-const baseUrl = "http://localhost:3001/api/worlds"
+import { SERVER_ENDPOINT } from "../../constants"
+
+const baseUrl = SERVER_ENDPOINT + "/worlds"
 
 function cleanFormData(formData) {
   for (var key in formData) {

@@ -1,3 +1,5 @@
+export const SERVER_ENDPOINT = "http://localhost:3001/api"
+
 export const MORALITY_OPTIONS = ["Evil", "Benign", "Good", "Other"]
 
 export const EVENT_TYPES = ["Main", "Subplot", "Background", "Other"]
