@@ -27,7 +27,7 @@ export default function EventTable() {
             <td colSpan={3}>{event.event_description}</td>
             <td>{event.event_type}</td>
             <td>{event.event_date}</td>
-            <td>{event.location !== null ? event.location.location_name : ""}</td>
+            <td>{event.location ? event.location.location_name : ""}</td>
             <td>
               <DeleteButton entityType="event" entityId={event.event_id} />
             </td>
